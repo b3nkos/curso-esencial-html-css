@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El Blog de Cristian</title>
+    <style>
+      body {
+        font-family: system-ui;
+      }
+      summary {
+        cursor: pointer;
+        outline: 0;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -217,5 +226,18 @@
         >mailto:cristianandres92@gmail.com</a
       >
     </p>
+    <script>
+      const detailList = document.querySelectorAll('details');
+      
+      detailList.forEach((detail) => {
+        detail.querySelector('summary').addEventListener('click', handleOpenDetail);
+      });
+
+      function handleOpenDetail() {
+        detailList.forEach((detail) => {
+          detail.removeAttribute('open');
+        });
+      }
+    </script>
   </body>
 </html>
