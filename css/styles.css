@@ -1,27 +1,27 @@
 @font-face {
   font-family: charter;
-  src: url('../fonts/charter-regular.otf');
+  src: url("../fonts/charter-regular.otf");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: charter;
-  src: url('../fonts/charter-italic.otf');
+  src: url("../fonts/charter-italic.otf");
   font-style: italic;
   font-weight: 400;
 }
 
 @font-face {
   font-family: charter;
-  src: url('../fonts/charter-bold.otf');
+  src: url("../fonts/charter-bold.otf");
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
   font-family: charter;
-  src: url('../fonts/charter-bold-italic.otf');
+  src: url("../fonts/charter-bold-italic.otf");
   font-style: italic;
   font-weight: bold;
 }
@@ -75,4 +75,30 @@ h2 {
 
 h3 {
   font-size: 24px;
+}
+
+pre {
+  background-color: #fec62e;
+}
+
+.hero {
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    ),
+    url("../images/patron-1.png");
+  height: 350px;
+}
+
+h3::before {
+  content: "-";
+}
+
+h3::after {
+  content: "";
+  width: 32px;
+  height: 4px;
+  background: var(--gray30);
+  display: block;
 }
