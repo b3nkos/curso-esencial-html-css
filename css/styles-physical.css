@@ -33,10 +33,49 @@
   --gray30: #212121;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--gray);
   font-family: 'Nunito', sans-serif;
   margin: 0;
+}
+
+.main {
+  /* border: 1px solid red; */
+  /* background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  ),
+  url("../images/patron-1.png"); */
+}
+
+.header-content {
+  position: relative;
+}
+
+.wrapper {
+  width: 902px;
+  margin: auto;
+}
+
+.main-content {
+  background-color: white;
+}
+
+.title {
+  background-color: red;
+}
+
+.services {
+  background-color: purple;
+}
+
+.pricing {
+  background-color: blue;
 }
 
 a {
@@ -46,11 +85,19 @@ a {
 header {
   font-size: 14px;
   color: var(--gray10);
+  position: absolute;
+  top: 64px;
+  left: -232px;
+  width: 188px;
 }
 
 header a {
   color: var(--gray10);
   text-decoration: none;
+}
+
+header li {
+  margin-bottom: 16px;
 }
 
 header a:hover {
@@ -59,6 +106,7 @@ header a:hover {
 
 nav details summary {
   font-weight: bold;
+  line-height: 24px;
 }
 
 summary {
@@ -70,6 +118,7 @@ h1 {
   font-size: 60px;
   margin-top: 64px;
   margin-bottom: 16px;
+  font-weight: normal;
 }
 
 h2 {
@@ -83,6 +132,9 @@ h3 {
   margin-top: 16px;
   margin-bottom: 24px;
   font-weight: normal;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
 hr {
@@ -112,6 +164,11 @@ blockquote span::before {
   content: '-';
 }
 
+.header {
+  position: sticky;
+  top: 0;
+}
+
 .hero {
   background-image: linear-gradient(
       to top,
@@ -133,7 +190,7 @@ blockquote span::before {
 
 .section-content h3 {
   counter-increment: titleList;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 .section-content h3::before {
@@ -142,10 +199,13 @@ blockquote span::before {
 
 .section-content h3::after {
   content: "";
-  width: 32px;
+  width: 80px;
   height: 4px;
   background: var(--gray30);
   display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .section-content img {
