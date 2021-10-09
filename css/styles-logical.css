@@ -37,20 +37,39 @@ body {
   color: var(--white30);
   font-family: 'Nunito', sans-serif;
   background: #251F24;
+  margin: 0;
 }
 
 a {
   color: var(--white20);
 }
 
+.header {
+  position: sticky;
+  inset-block-start: -45px;
+}
+
+.header-content {
+  position: relative;
+  inset-block-start: 65px;
+}
+
 header {
   font-size: 14px;
   color: var(--white30);
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: -208px;
+  inline-size: 188px;
 }
 
 header a {
   color: var(--white20);
   text-decoration: none;
+}
+
+header li {
+  margin-block-end: 16px;
 }
 
 header a:hover {
@@ -67,23 +86,40 @@ summary {
 }
 
 h1, h2, h3 {
-  font-weight: normal;
+  /* font-weight: normal; */
 }
 
 h1 {
   font-size: 60px;
+  margin-block-start: 64px;
+  margin-block-end: 16px;
 }
 
 h2 {
   font-size: 32px;
+  margin-block: 40px;
 }
 
 h3 {
   font-size: 24px;
+  font-weight: 600;
+  margin-block: 16px;
+}
+
+hr {
+  margin-block: 40px;
+  border-color: rgba(97, 97, 97, 0.2);
 }
 
 pre {
   background-color: var(--white10);
+  padding-inline: 40px;
+  padding-block: 40px;
+  overflow: auto;
+  border: 8px solid #5551FF;
+  box-shadow: -10px 10px 0 0 #ABAAF6;
+  margin-block-end: 30px;
+  border-start-start-radius: 10px;
 }
 
 p {
@@ -107,10 +143,58 @@ p {
   content: counter(titleList, decimal) ". ";
 }
 
-.section-content h3::after {
-  content: "";
-  width: 32px;
-  height: 4px;
-  background: var(--white30);
+.section-content img {
+  display: block;
+  margin-block-start: 40px;
+  max-inline-size: 100%;
+}
+
+
+blockquote {
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  background-color: var(--white10);
+  border-radius: 8px;
+  padding-inline-start: 24px;
+  padding-inline-end: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
+  line-height: 32px;
+  font-size: 24px;
+}
+
+blockquote p {
+  color: var(--white30);
+}
+
+.main hr {
+  display: none;
+}
+
+.wrapper {
+  max-inline-size: 902px;
+  margin: auto;
+}
+
+.main-content {
+  padding-inline: 16px;
+}
+
+.slider {
+  border: 1px solid red;
+}
+
+.slider-container {
+  block-size: 100px;
+  display: block;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.slider-slide h1 {
+  border: 2px solid white;
+  margin: 0;
   display: inline-block;
+  width: 100%;
 }
