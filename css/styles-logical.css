@@ -31,12 +31,17 @@
   --white10: #3A3539;
   --white20: #A5A3A5;
   --white30: white;
+  --white40: #251F24;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--white30);
   font-family: 'Nunito', sans-serif;
-  background: #251F24;
+  background-color: var(--white40);
   margin: 0;
 }
 
@@ -208,4 +213,31 @@ blockquote p {
   block-size: 15px;
   background-color: white;
   border-radius: 50%;
+}
+
+.slider-bullet-list a:hover {
+  background-color: red;
+}
+
+.form input {
+  inline-size: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--white30);
+  background-color: var(--white40);
+  border-radius: 8px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  color: var(--white30);
+  font-size: 16px;
+  display: block;
+  margin-block-end: 24px;
+}
+
+.form input[type="submit"] {
+  background-color: #157EFB;
+  border: none;
+}
+
+.form input::placeholder {
+  color: var(--white20);
 }
