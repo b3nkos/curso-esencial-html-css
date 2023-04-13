@@ -1,31 +1,3 @@
-@font-face {
-  font-family: charter;
-  src: url("../fonts/charter-regular.otf");
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: charter;
-  src: url("../fonts/charter-italic.otf");
-  font-style: italic;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: charter;
-  src: url("../fonts/charter-bold.otf");
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: charter;
-  src: url("../fonts/charter-bold-italic.otf");
-  font-style: italic;
-  font-weight: bold;
-}
-
 :root {
   font-size: 18px;
   --white10: #3A3539;
@@ -72,6 +44,20 @@ header a:hover {
   color: var(--white20);
 }
 
+footer {
+  block-size: 174px;
+  width: 100%;
+  background-color: var(--white30);
+  color: var(--white40);
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 nav details summary {
   font-weight: bold;
 }
@@ -79,10 +65,6 @@ nav details summary {
 summary {
   cursor: pointer;
   outline: 0;
-}
-
-h1, h2, h3 {
-  /* font-weight: normal; */
 }
 
 h1 {
@@ -144,7 +126,6 @@ p {
   margin-block-start: 40px;
   max-inline-size: 100%;
 }
-
 
 blockquote {
   margin-block-start: 80px;
@@ -260,5 +241,9 @@ blockquote p {
     font-size: 60px;
     margin-block-start: 64px;
     margin-block-end: 16px;
+  }
+
+  .nav-variants {
+    margin-block: -20px 104px;
   }
 }
