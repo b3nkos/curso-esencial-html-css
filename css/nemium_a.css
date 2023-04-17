@@ -269,15 +269,10 @@ pre {
     color: var(--gray10);
   }
 
-  .header {
-    position: sticky;
-    inset-block-start: -45px;
-  }
-
-  .header-content {
-    position: relative;
-    inset-block-start: 65px;
-    padding-inline: 0;
+  h1 {
+    font-size: 60px;
+    margin-block-start: 64px;
+    margin-block-end: 16px;
   }
 
   header {
@@ -313,14 +308,19 @@ pre {
     outline: 0;
   }
 
-  .hero {
-    block-size: 350px;
+  .header {
+    position: sticky;
+    inset-block-start: -45px;
   }
 
-  h1 {
-    font-size: 60px;
-    margin-block-start: 64px;
-    margin-block-end: 16px;
+  .header-content {
+    position: relative;
+    inset-block-start: 65px;
+    padding-inline: 0;
+  }
+
+  .hero {
+    block-size: 350px;
   }
 
   .nav-content {
